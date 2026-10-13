@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claude-statusline"
+version = "1.0.0"
+description = "A one-line, window-fitted status line for Claude Code, installed with one command."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Roei Michael" }]
+dependencies = []
+
+[project.scripts]
+claude-statusline = "statusline:main"
+
+[project.urls]
+Homepage = "https://github.com/roeimichael/claude-code-statusline"
+
+[tool.setuptools]
+py-modules = ["statusline"]
